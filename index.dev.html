@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Jaouadul Karim Himel | Data Analyst & Business Intelligence Specialist</title>
+  <meta name="title" content="Jaouadul Karim Himel | Data Analyst & Business Intelligence Specialist">
+  <meta name="description" content="Portfolio of Jaouadul Karim Himel, professional Data Analyst & BI Specialist. Expert in Power BI, SQL, Python, Tableau, predictive modeling, and executive dashboard design.">
+  <meta name="keywords" content="Data Analyst, Business Intelligence, Power BI, SQL, Python, Tableau, Data Visualization, Jaouadul Karim Himel, Machine Learning">
+  <meta name="author" content="Jaouadul Karim Himel">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.facebook.com/jaouadul.karim/">
+  <meta property="og:title" content="Jaouadul Karim Himel | Data Analyst Portfolio">
+  <meta property="og:description" content="Turning complex enterprise datasets into actionable business intelligence, predictive models, and high-impact executive dashboards.">
+  <meta property="og:image" content="assets/images/himel-dark.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2309090c' stroke='%23ef233c' stroke-width='4'/%3E%3Ctext x='50' y='65' font-family='sans-serif' font-size='48' font-weight='900' fill='%23ef233c' text-anchor='middle'%3EH%3C/text%3E%3Ccircle cx='76' cy='32' r='6' fill='%23ef233c'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Engine (With Offline Local Fallback) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (typeof tailwind === 'undefined') {
+      document.write('<script src="assets/js/tailwind.cdn.js"><\/script>');
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              darkest: '#050507',
+              dark: '#09090c',
+              card: '#121217',
+              cardHover: '#191922',
+              red: '#d90429',
+              redBright: '#ef233c',
+              redVivid: '#ff1e38',
+              redDeep: '#a00812',
+            }
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Caveat"', 'cursive'],
+          },
+          animation: {
+            'float-slow': 'float 4.5s ease-in-out infinite',
+            'glow-pulse': 'glowPulse 3s ease-in-out infinite',
+            'radar': 'radar 3s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            glowPulse: {
+              '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+              '50%': { opacity: '1', transform: 'scale(1.04)' },
+            },
+            radar: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Core Design System Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#050507] text-[#f8fafc] font-body selection:bg-[#ef233c] selection:text-white">
+
+  <!-- Ambient Cinematic Background Glows -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+  </div>
+
+  <!-- Grain Texture Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Editorial Scroll Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Header / Top Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Left: Role & Title Badge -->
+      <a href="#hero" class="brand-badge group" aria-label="Jaouadul Karim Himel Homepage">
+        <span class="brand-title group-hover:text-white transition-colors duration-200">JAOUADUL KARIM HIMEL</span>
+      </a>
+
+      <!-- Middle: Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">Overview</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#skills-process" class="nav-link">Skills &amp; Process</a>
+        <a href="#contact" class="nav-link">Get In Touch</a>
+      </nav>
+
+      <!-- Right: Availability & WhatsApp Action -->
+      <div class="nav-actions">
+        <div class="status-badge hover:border-emerald-500/40 transition-all duration-300">
+          <span class="status-pulse"></span>
+          <span>AVAILABLE FOR HIRE</span>
+        </div>
+        <a href="https://wa.me/8801621467652?text=Hello%20Jaouadul%20Karim%20Himel,%20I%20would%20like%20to%20discuss%20a%20data%20analytics%20project." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-nav group" aria-label="Contact Himel on WhatsApp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" class="group-hover:scale-110 transition-transform duration-200">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" class="fixed inset-0 bg-black/95 z-[999] backdrop-blur-2xl flex flex-col justify-center items-center gap-8 transition-all duration-300 opacity-0 pointer-events-none [&.open]:opacity-100 [&.open]:pointer-events-auto">
+    <button id="mobileNavCloseBtn" class="absolute top-6 right-6 text-white text-3xl hover:text-[#ef233c]">&times;</button>
+    <a href="#hero" class="text-2xl font-display uppercase tracking-widest text-white hover:text-[#ef233c]">Overview</a>
+    <a href="#services" class="text-2xl font-display uppercase tracking-widest text-white hover:text-[#ef233c]">Services</a>
+    <a href="#skills-process" class="text-2xl font-display uppercase tracking-widest text-white hover:text-[#ef233c]">Skills &amp; Process</a>
+    <a href="#contact" class="text-2xl font-display uppercase tracking-widest text-white hover:text-[#ef233c]">Get In Touch</a>
+    <a href="https://wa.me/8801621467652" class="mt-4 px-8 py-3 bg-[#ef233c] text-white font-bold tracking-widest uppercase rounded">Chat on WhatsApp</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section - Editorial Poster Masterpiece (Reference Matched)
+         PORTFOLIO TEXT HIGH VISIBILITY & 3D PARALLAX DEPTH
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left Hero Column: Identity & Bio -->
+        <div class="hero-left">
+          <div class="hero-greeting animate-float-slow">
+            <span>Hello, I'm</span>
+          </div>
+
+          <div class="hero-name-block">
+            <h2 class="hero-name">JAOUADUL<br>KARIM<br>HIMEL</h2>
+          </div>
+
+          <p class="hero-bio">
+            Hi, I'm Jaouadul Karim Himel. I specialize in high-precision statistical analysis using JASP, SPSS, and Excel. I help researchers, academics, and businesses target their specific analytical needs.
+          </p>
+
+          <div class="hero-tags">
+            <div class="hero-pill-badge hover:scale-105 transition-transform duration-200">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>AVAILABLE WORLDWIDE</span>
+            </div>
+            <div class="hero-pill-badge hover:scale-105 transition-transform duration-200">
+              <span style="color:var(--accent-red-bright);">★</span>
+              <span>JASP, SPSS &amp; EXCEL SPECIALIST</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#services" class="btn-primary group">
+              <span>EXPLORE SERVICES</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:translate-y-1 transition-transform duration-200">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/8801621467652?text=Hello%20Himel,%20I%20would%20like%20to%20discuss%20a%20data%20analytics%20project." target="_blank" rel="noopener noreferrer" class="btn-outline group">
+              <span>LET'S TALK</span>
+              <span class="group-hover:translate-x-1 transition-transform duration-200" style="color:var(--accent-red-bright);">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Hero Column: Himel's Editorial Portrait -->
+        <div class="hero-center">
+          <div class="hero-portrait-stage">
+            <div class="portrait-glow-ring" aria-hidden="true"></div>
+            <div class="portrait-image-container group">
+              <img 
+                id="heroPortraitImg"
+                src="assets/images/himel-dark.jpg" 
+                alt="Jaouadul Karim Himel - Data Analyst" 
+                class="portrait-img"
+                width="600"
+                height="800"
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Value Proposition & Stats Counter -->
+        <div class="hero-right">
+          <div class="hero-value-prop">
+            <span class="sparkle-icon">✦</span>
+            <p class="value-prop-text">
+              High-precision statistical analysis targeting research, academic &amp; business analytical needs.
+            </p>
+          </div>
+
+          <div class="hero-stats-stack">
+            <!-- Stat 1 -->
+            <div class="stat-item group">
+              <div class="stat-number-wrapper">
+                <span class="stat-number group-hover:scale-105 transition-transform duration-200" data-target="3">3</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">YEARS<br>EXPERIENCE</span>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="stat-item group">
+              <div class="stat-number-wrapper">
+                <span class="stat-number group-hover:scale-105 transition-transform duration-200" data-target="48">48</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">PROJECTS<br>COMPLETED</span>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-item group">
+              <div class="stat-number-wrapper">
+                <span class="stat-number group-hover:scale-105 transition-transform duration-200" data-target="25">25</span>
+                <span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">HAPPY<br>CLIENTS</span>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="stat-item group">
+              <div class="stat-number-wrapper">
+                <span class="stat-number group-hover:scale-105 transition-transform duration-200" data-target="99">99</span>
+                <span class="stat-plus">%</span>
+              </div>
+              <span class="stat-label">ACCURACY &amp;<br>DELIVERY RATE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Continuous Skills Marquee Ribbon (Infinite Flow)
+         ========================================================================== -->
+    <div class="skills-marquee-container" aria-hidden="true">
+      <div class="skills-marquee-track">
+        <span class="marquee-pill">JASP <span class="dot">✦</span></span>
+        <span class="marquee-pill">IBM SPSS <span class="dot">✦</span></span>
+        <span class="marquee-pill">ADVANCED EXCEL <span class="dot">✦</span></span>
+        <span class="marquee-pill">STATISTICAL ANALYSIS <span class="dot">✦</span></span>
+        <span class="marquee-pill">HYPOTHESIS TESTING <span class="dot">✦</span></span>
+        <span class="marquee-pill">REGRESSION &amp; ANOVA <span class="dot">✦</span></span>
+        <span class="marquee-pill">ACADEMIC RESEARCH <span class="dot">✦</span></span>
+        <span class="marquee-pill">POWER BI <span class="dot">✦</span></span>
+        <span class="marquee-pill">SQL DATABASE <span class="dot">✦</span></span>
+        <span class="marquee-pill">PYTHON (PANDAS) <span class="dot">✦</span></span>
+        <span class="marquee-pill">DATA STORYTELLING <span class="dot">✦</span></span>
+        <!-- Duplicate for continuous loop -->
+        <span class="marquee-pill">JASP <span class="dot">✦</span></span>
+        <span class="marquee-pill">IBM SPSS <span class="dot">✦</span></span>
+        <span class="marquee-pill">ADVANCED EXCEL <span class="dot">✦</span></span>
+        <span class="marquee-pill">STATISTICAL ANALYSIS <span class="dot">✦</span></span>
+        <span class="marquee-pill">HYPOTHESIS TESTING <span class="dot">✦</span></span>
+        <span class="marquee-pill">REGRESSION &amp; ANOVA <span class="dot">✦</span></span>
+        <span class="marquee-pill">ACADEMIC RESEARCH <span class="dot">✦</span></span>
+        <span class="marquee-pill">POWER BI <span class="dot">✦</span></span>
+        <span class="marquee-pill">SQL DATABASE <span class="dot">✦</span></span>
+        <span class="marquee-pill">PYTHON (PANDAS) <span class="dot">✦</span></span>
+        <span class="marquee-pill">DATA STORYTELLING <span class="dot">✦</span></span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Services & Specializations Section (Exact Match to Reference Pic 2)
+         ========================================================================== -->
+    <section class="services-section relative py-20" id="services">
+      <div class="container relative z-10">
+        <!-- Section Header Row with Divider -->
+        <div class="section-header-row mb-12 reveal-init">
+          <div class="section-title-wrap">
+            <h2 class="section-title">SERVICES &amp; SPECIALIZATIONS</h2>
+            <div class="section-divider-line"></div>
+          </div>
+          <a href="#contact" class="section-view-all">
+            <span>REQUEST A QUOTE</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- 6 Services Grid (Pic 2 Matched) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1: SPSS Statistical Analysis -->
+          <div class="spotlight-card reveal-init stagger-1 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-cyan-500/40 hover:shadow-[0_12px_35px_rgba(6,182,212,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="SPSS Statistical Analysis" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Cyan / Bar Chart) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#0c222b] border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                SPSS Statistical Analysis
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                Comprehensive data evaluation using IBM SPSS. Includes Descriptive Statistics, T-Tests, ANOVA, MANOVA, Non-Parametric tests, and Correlation analysis.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Assumption Checking</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>APA Style Output Tables</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: JASP Data Analytics -->
+          <div class="spotlight-card reveal-init stagger-2 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-emerald-500/40 hover:shadow-[0_12px_35px_rgba(16,185,129,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="JASP Hypothesis & Bayesian Analysis" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Emerald / Brain) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#0c281e] border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"></path>
+                  <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"></path>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                JASP Data Analytics
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                Modern Frequentist and Bayesian statistical analysis in JASP. Fast, transparent hypothesis testing with clean graphical summaries.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Bayesian Estimation</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Factor Analysis (EFA/CFA)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Survey & Questionnaire Analysis -->
+          <div class="spotlight-card reveal-init stagger-3 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-purple-500/40 hover:shadow-[0_12px_35px_rgba(168,85,247,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="Survey Validation & Cronbach's Alpha" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Purple / Checklist) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#1e1533] border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="9" y1="6" x2="20" y2="6"></line>
+                  <line x1="9" y1="12" x2="20" y2="12"></line>
+                  <line x1="9" y1="18" x2="20" y2="18"></line>
+                  <polyline points="4 6 5 7 7 5"></polyline>
+                  <polyline points="4 12 5 13 7 11"></polyline>
+                  <polyline points="4 18 5 19 7 17"></polyline>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                Survey &amp; Questionnaire Analysis
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                Validation and analysis for Likert scale surveys, Reliability testing (Cronbach's Alpha), and demographic profiling for academic and business surveys.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Cronbach's Alpha Reliability</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Demographic Profiling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Data Cleaning & Preprocessing -->
+          <div class="spotlight-card reveal-init stagger-4 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-teal-500/40 hover:shadow-[0_12px_35px_rgba(20,184,166,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="Excel Advanced Modeling & VBA" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Teal / Brush Cleaner) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#0c2724] border border-teal-500/30 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15 4-2 2"></path>
+                  <path d="m15 9-3-3"></path>
+                  <path d="M17.8 2.2a2.4 2.4 0 0 0-3.4 0l-9.9 9.9a1.6 1.6 0 0 0-.4.7l-1.5 5.2a.5.5 0 0 0 .6.6l5.2-1.5a1.6 1.6 0 0 0 .7-.4l9.9-9.9a2.4 2.4 0 0 0 0-3.4l-1.6-1.2z"></path>
+                  <path d="m3 21 4-1"></path>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">
+                Data Cleaning &amp; Preprocessing
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                Transforming messy raw dataset files into analysis-ready formats. Outlier detection, missing value imputation, and variable transformation.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Outlier Detection</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Excel/CSV Normalization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Data Visualization & Reporting -->
+          <div class="spotlight-card reveal-init stagger-5 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-sky-500/40 hover:shadow-[0_12px_35px_rgba(14,165,233,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="Business Intelligence & Analytics" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Sky Blue / Pie Chart) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#0b2438] border border-sky-500/30 flex items-center justify-center text-sky-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">
+                Data Visualization &amp; Reporting
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                Creating clear charts, bar plots, scatterplots, and summary dashboards to communicate analytical findings clearly to thesis committees or stakeholders.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Custom Chart Formatting</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Executive Summary PDF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Academic Research Support -->
+          <div class="spotlight-card reveal-init stagger-6 p-7 md:p-8 rounded-2xl bg-[#121217] border border-white/10 hover:border-amber-500/40 hover:shadow-[0_12px_35px_rgba(245,158,11,0.12)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group cursor-pointer" data-service-select="Thesis / Dissertation Results Chapter Support" title="Click to select this service in contact form">
+            <div>
+              <!-- Icon Badge (Amber Gold / Mortarboard Cap) -->
+              <div class="w-[52px] h-[52px] rounded-xl bg-[#2a1d0b] border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
+                Academic Research Support
+              </h3>
+
+              <!-- Description -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                One-on-one consultation regarding methodology selection, result interpretation, and writing the Results/Findings chapter for research papers.
+              </p>
+            </div>
+
+            <!-- Bullet Checklist -->
+            <div class="flex flex-col gap-2 pt-4 border-t border-white/[0.07]">
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Result Interpretation</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs font-mono text-neutral-300">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Methodology Guidance</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Three-Column Feature Row (Education/Skills | Work Process | Philosophy)
+         Exact Reference Poster Design Layout!
+         ========================================================================== -->
+    <section class="tri-section" id="skills-process">
+      <div class="container">
+        <div class="tri-grid">
+          
+          <!-- Column 1: Education & Skills -->
+          <div class="tri-col-education spotlight-card reveal-init reveal-left stagger-1">
+            <div>
+              <h2 class="col-headline">EDUCATION &amp; SKILLS</h2>
+              
+              <div class="education-subheading">EDUCATION &amp; CERTIFICATIONS</div>
+              <div class="edu-items-list">
+                <!-- Item 1 -->
+                <div class="edu-item">
+                  <div>
+                    <div class="edu-degree">Google Data Analytics Professional</div>
+                    <div class="edu-school">Google Career Certificates (Coursera)</div>
+                  </div>
+                  <span class="edu-year">2023</span>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="edu-item">
+                  <div>
+                    <div class="edu-degree">Microsoft Certified: Power BI Associate</div>
+                    <div class="edu-school">PL-300 Data Analyst Certification</div>
+                  </div>
+                  <span class="edu-year">2024</span>
+                </div>
+
+                <!-- Item 3: IBM / Cognitive Class Python 101 for Data Science -->
+                <div class="edu-item edu-item-interactive group/cert" id="ibmCertItem" role="button" tabindex="0" onclick="openCertModal()" onkeydown="if(event.key==='Enter'||event.key===' ')openCertModal()" title="Click to view verified IBM certificate">
+                  <div>
+                    <div class="edu-degree flex items-center gap-2 group-hover/cert:text-[#ef233c] transition-colors">
+                      <span>Python 101 for Data Science</span>
+                      <span class="inline-flex items-center text-[10px] font-bold font-mono text-[#ef233c] bg-[#ef233c]/10 border border-[#ef233c]/30 px-1.5 py-0.2 rounded tracking-wide">IBM</span>
+                    </div>
+                    <div class="edu-school">Cognitive Class &amp; IBM Developer Skills Network (PY0101EN)</div>
+                    <div class="cert-action-links">
+                      <button type="button" class="cert-preview-btn" onclick="openCertModal(); event.stopPropagation();">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        <span>View Credential</span>
+                      </button>
+                      <a href="https://courses.cognitiveclass.ai/certificates/44a0ab78a0124c0094310caacbe11107" target="_blank" rel="noopener noreferrer" class="cert-verify-link" onclick="event.stopPropagation()">
+                        <span>Verify Authenticity</span>
+                        <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="edu-year">2026</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills Pills -->
+            <div>
+              <div class="skills-group-title">CORE STATISTICAL &amp; DATA TOOLS</div>
+              <div class="skills-pill-grid">
+                <span class="skill-tag">JASP</span>
+                <span class="skill-tag">IBM SPSS</span>
+                <span class="skill-tag">ADVANCED EXCEL</span>
+                <span class="skill-tag">STATISTICAL ANALYSIS</span>
+                <span class="skill-tag">HYPOTHESIS TESTING</span>
+                <span class="skill-tag">ANOVA &amp; MANOVA</span>
+                <span class="skill-tag">REGRESSION MODELING</span>
+                <span class="skill-tag">ACADEMIC RESEARCH</span>
+                <span class="skill-tag">POWER BI</span>
+                <span class="skill-tag">SQL DATABASE</span>
+                <span class="skill-tag">PYTHON (PANDAS)</span>
+                <span class="skill-tag">DATA STORYTELLING</span>
+                <span class="skill-tag">DESCRIPTIVE STATS</span>
+                <span class="skill-tag">EXCEL VBA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Work Process (Vertical Stepper with Red Nodes) -->
+          <div class="tri-col-process spotlight-card reveal-init stagger-2">
+            <h2 class="col-headline">WORK PROCESS</h2>
+            
+            <div class="process-timeline">
+              <!-- Step 01 -->
+              <div class="process-step group">
+                <div class="step-node">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <span class="step-num">01</span>
+                    <span class="step-title">DISCOVER</span>
+                  </div>
+                  <p class="step-desc">
+                    Understanding core business KPIs, stakeholder pain points, data sources, and success criteria.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="process-step group">
+                <div class="step-node">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <span class="step-num">02</span>
+                    <span class="step-title">EXTRACT &amp; CLEAN</span>
+                  </div>
+                  <p class="step-desc">
+                    Querying databases via SQL, automated ETL data wrangling, handling nulls, outliers, and schema normalization.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="process-step group">
+                <div class="step-node">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <span class="step-num">03</span>
+                    <span class="step-title">EXPLORE &amp; MODEL</span>
+                  </div>
+                  <p class="step-desc">
+                    Exploratory Data Analysis (EDA), statistical correlation, trend forecasting, and predictive modeling in Python.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="process-step group">
+                <div class="step-node">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <span class="step-num">04</span>
+                    <span class="step-title">VISUALIZE &amp; DASHBOARD</span>
+                  </div>
+                  <p class="step-desc">
+                    Designing interactive, visually striking Power BI/Tableau dashboards with real-time filters and drill-downs.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 05 -->
+              <div class="process-step group">
+                <div class="step-node">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="step-content">
+                  <div class="step-header">
+                    <span class="step-num">05</span>
+                    <span class="step-title">DELIVER &amp; IMPACT</span>
+                  </div>
+                  <p class="step-desc">
+                    Executive presentation, automated scheduled alerts, data storytelling, and continuous ROI tracking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Philosophy Quote Card (Reference Red Block) -->
+          <div class="tri-col-quote group reveal-init reveal-right stagger-3">
+            <div class="quote-pattern-bg"></div>
+            
+            <div class="quote-icon" aria-hidden="true">“</div>
+
+            <p class="quote-body-text">
+              High-precision statistical analysis is not just presenting numbers; it is illuminating the validated truth that drives decisive research, academic, and business action.
+            </p>
+
+            <div class="quote-author-wrap">
+              <div class="quote-signature">Himel</div>
+              <div class="quote-author-title">JAOUADUL KARIM HIMEL</div>
+            </div>
+
+            <div class="quote-bottom-tagline">
+              <span>LET'S CREATE IMPACT TOGETHER</span>
+              <span style="font-size:1.1rem;">+</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Let's Work Together & Contact (Exact Reference Bottom Section)
+         ========================================================================== -->
+    <!-- ==========================================================================
+         Contact Section - Let's Discuss Your Data Analysis Needs (Seamless Background)
+         ========================================================================== -->
+    <section class="contact-section relative py-20 overflow-hidden" id="contact">
+      <div class="container relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Left Column: Details & Clickable Direct Contact Cards (5 cols) -->
+          <div class="lg:col-span-5 flex flex-col justify-between reveal-init reveal-left stagger-1">
+            <div>
+              <span class="text-[#ef233c] text-xs font-bold tracking-widest uppercase mb-3 inline-flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#ef233c] animate-pulse"></span>
+                CONTACT
+              </span>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+                Let's Discuss Your Data Analysis Needs
+              </h2>
+              <p class="text-neutral-400 text-sm leading-relaxed mb-8">
+                Have a dataset that needs statistical analysis, thesis results section support, or a survey that requires validation? Connect with me directly on WhatsApp, Facebook, or send a message below!
+              </p>
+            </div>
+
+            <!-- Clickable Contact Cards Stack -->
+            <div class="flex flex-col gap-3.5 mb-8">
+              <!-- WhatsApp Card -->
+              <a href="https://wa.me/8801621467652?text=Hello%20Jaouadul%20Karim%20Himel,%20I%20would%20like%20to%20discuss%20a%20statistical%20data%20analysis%20project." target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-[#121217] border border-white/10 hover:border-[#ef233c]/60 hover:shadow-lg hover:shadow-[#ef233c]/15 transition-all duration-300 flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-10 h-10 rounded-full bg-[#ef233c]/10 border border-[#ef233c]/25 text-[#ef233c] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-neutral-400 font-medium">WhatsApp Direct</div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-white font-bold text-sm md:text-base tracking-wide">+880 1621–467652</span>
+                      <span class="text-[10px] font-bold text-[#ef233c] bg-[#ef233c]/10 border border-[#ef233c]/25 px-2 py-0.5 rounded-full">Instant</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="text-neutral-500 group-hover:text-[#ef233c] group-hover:translate-x-1 transition-all text-lg font-light">&gt;</span>
+              </a>
+
+              <!-- Facebook Card -->
+              <a href="https://www.facebook.com/jaouadul.karim/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-[#121217] border border-white/10 hover:border-[#ef233c]/60 hover:shadow-lg hover:shadow-[#ef233c]/15 transition-all duration-300 flex items-center justify-between group">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-10 h-10 rounded-full bg-[#ef233c]/10 border border-[#ef233c]/25 text-[#ef233c] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-neutral-400 font-medium">Facebook ID</div>
+                    <span class="text-white font-bold text-sm md:text-base tracking-wide">facebook.com/jaouadulkarim</span>
+                  </div>
+                </div>
+                <svg class="w-4 h-4 text-neutral-500 group-hover:text-[#ef233c] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+
+              <!-- Email Card -->
+              <div class="p-4 rounded-xl bg-[#121217] border border-white/10 hover:border-[#ef233c]/60 hover:shadow-lg hover:shadow-[#ef233c]/15 transition-all duration-300 flex items-center justify-between group cursor-pointer" data-copy="jaouadulkarimhimel@gmail.com" title="Click to copy email">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-10 h-10 rounded-full bg-[#ef233c]/10 border border-[#ef233c]/25 text-[#ef233c] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-neutral-400 font-medium">Direct Email</div>
+                    <span class="text-white font-bold text-sm md:text-base tracking-wide">jaouadulkarimhimel@gmail.com</span>
+                  </div>
+                </div>
+                <span class="text-xs text-neutral-400 group-hover:text-[#ef233c] transition-colors">Copy</span>
+              </div>
+            </div>
+
+            <!-- Social Profiles Icons Row -->
+            <div>
+              <div class="text-[10px] text-neutral-400 font-bold tracking-widest uppercase mb-3">ALL SOCIAL &amp; WEB PROFILES</div>
+              <div class="flex items-center gap-3">
+                <a href="https://wa.me/8801621467652" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#121217] border border-white/10 hover:border-[#ef233c] hover:text-[#ef233c] hover:shadow-[0_0_15px_rgba(239,35,60,0.3)] text-neutral-400 flex items-center justify-center transition-all" aria-label="WhatsApp">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/jaouadul.karim/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#121217] border border-white/10 hover:border-[#ef233c] hover:text-[#ef233c] hover:shadow-[0_0_15px_rgba(239,35,60,0.3)] text-neutral-400 flex items-center justify-center transition-all" aria-label="Facebook">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="mailto:jaouadulkarimhimel@gmail.com" class="w-10 h-10 rounded-full bg-[#121217] border border-white/10 hover:border-[#ef233c] hover:text-[#ef233c] hover:shadow-[0_0_15px_rgba(239,35,60,0.3)] text-neutral-400 flex items-center justify-center transition-all" aria-label="Email">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+                <a href="#hero" class="w-10 h-10 rounded-full bg-[#121217] border border-white/10 hover:border-[#ef233c] hover:text-[#ef233c] hover:shadow-[0_0_15px_rgba(239,35,60,0.3)] text-neutral-400 flex items-center justify-center transition-all" aria-label="Website">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form (7 cols) -->
+          <div class="lg:col-span-7 reveal-init reveal-right stagger-2">
+            <div class="p-7 md:p-9 rounded-2xl bg-[#121217] border border-white/10 shadow-2xl backdrop-blur-xl">
+              <form id="contactFormScreenshot" class="flex flex-col gap-5">
+                <!-- Row 1: Name and Email -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold text-neutral-300">Your Name</label>
+                    <input 
+                      type="text" 
+                      id="formName" 
+                      required 
+                      placeholder="John Doe" 
+                      class="w-full px-4 py-3 rounded-lg bg-[#09090d] border border-white/10 focus:border-[#ef233c] focus:ring-1 focus:ring-[#ef233c]/50 text-white placeholder-neutral-500 text-sm md:text-base outline-none transition-all"
+                    >
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold text-neutral-300">Email Address</label>
+                    <input 
+                      type="email" 
+                      id="formEmail" 
+                      required 
+                      placeholder="john@example.com" 
+                      class="w-full px-4 py-3 rounded-lg bg-[#09090d] border border-white/10 focus:border-[#ef233c] focus:ring-1 focus:ring-[#ef233c]/50 text-white placeholder-neutral-500 text-sm md:text-base outline-none transition-all"
+                    >
+                  </div>
+                </div>
+
+                <!-- Row 2: Service Needed Dropdown -->
+                <div class="flex flex-col gap-2">
+                  <label class="text-xs font-semibold text-neutral-300">Service Needed</label>
+                  <select 
+                    id="formService" 
+                    class="w-full px-4 py-3 rounded-lg bg-[#09090d] border border-white/10 focus:border-[#ef233c] focus:ring-1 focus:ring-[#ef233c]/50 text-white text-sm md:text-base outline-none transition-all appearance-none cursor-pointer"
+                  >
+                    <option value="SPSS Statistical Analysis" selected>SPSS Statistical Analysis</option>
+                    <option value="JASP Hypothesis & Bayesian Analysis">JASP Hypothesis &amp; Bayesian Analysis</option>
+                    <option value="Excel Advanced Modeling & VBA">Excel Advanced Modeling &amp; VBA</option>
+                    <option value="Thesis / Dissertation Results Chapter Support">Thesis / Dissertation Results Chapter Support</option>
+                    <option value="Survey Validation & Cronbach's Alpha">Survey Validation &amp; Cronbach's Alpha</option>
+                    <option value="Academic Research Consultation">Academic Research Consultation</option>
+                    <option value="Business Intelligence & Analytics">Business Intelligence &amp; Analytics</option>
+                  </select>
+                </div>
+
+                <!-- Row 3: Project Details / Message -->
+                <div class="flex flex-col gap-2">
+                  <label class="text-xs font-semibold text-neutral-300">Project Details / Message</label>
+                  <textarea 
+                    id="formMessage" 
+                    rows="4" 
+                    required 
+                    placeholder="Please describe your dataset size, variables, and research questions..." 
+                    class="w-full px-4 py-3 rounded-lg bg-[#09090d] border border-white/10 focus:border-[#ef233c] focus:ring-1 focus:ring-[#ef233c]/50 text-white placeholder-neutral-500 text-sm md:text-base outline-none transition-all resize-none"
+                  ></textarea>
+                </div>
+
+                <!-- Row 4: Submit Button -->
+                <button 
+                  type="submit" 
+                  class="w-full py-4 mt-2 rounded-xl font-bold text-white bg-gradient-to-r from-[#d90429] via-[#ef233c] to-[#ff1e38] hover:brightness-110 transition-all duration-300 shadow-lg shadow-[#ef233c]/35 hover:shadow-[#ef233c]/55 hover:scale-[1.01] text-base tracking-wide flex items-center justify-center gap-2 cursor-pointer active:scale-[0.99] group"
+                >
+                  <span>Send Message</span>
+                  <svg class="w-4 h-4 fill-current group-hover:translate-x-1.5 transition-transform duration-200" viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-row">
+      <div class="footer-brand">
+        <span style="font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#fff;">JAOUADUL KARIM HIMEL</span>
+        <span class="footer-copy">&copy; 2026. Data Analytics &amp; Business Intelligence. All rights reserved.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#skills-process" class="footer-link">Skills &amp; Process</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <button id="backToTopBtn" class="btn-back-to-top" aria-label="Back to Top of Page" title="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Case Study Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study Modal">&times;</button>
+      
+      <div class="modal-hero-image-wrap">
+        <img id="modalImage" src="" alt="Project Case Study Preview" class="modal-hero-image">
+      </div>
+
+      <div class="modal-content-inner">
+        <div>
+          <span class="modal-category" id="modalCategory">E-COMMERCE &amp; RETAIL BI</span>
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        </div>
+
+        <!-- Metrics Cards -->
+        <div class="modal-metrics-bar" id="modalMetrics">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Overview Block -->
+        <div class="modal-text-block">
+          <h4>Project Overview</h4>
+          <p id="modalOverviewText"></p>
+        </div>
+
+        <!-- Challenge Block -->
+        <div class="modal-text-block">
+          <h4>The Business Challenge</h4>
+          <p id="modalChallengeText"></p>
+        </div>
+
+        <!-- Solution Block -->
+        <div class="modal-text-block">
+          <h4>Data Architecture &amp; Methodology</h4>
+          <p id="modalSolutionText"></p>
+        </div>
+
+        <!-- Tech Stack Tags -->
+        <div>
+          <h4 style="font-size:0.75rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-red-bright);margin-bottom:0.6rem;">TOOLS &amp; TECHNOLOGIES USED</h4>
+          <div class="modal-tools-list" id="modalTags">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+        <!-- Modal CTA -->
+        <div style="margin-top:1rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="https://wa.me/8801621467652?text=Hello%20Himel,%20I%20am%20interested%20in%20a%20similar%20data%20project%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <span>DISCUSS SIMILAR SOLUTION ON WHATSAPP</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Verified Credential & Certificate Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-box max-w-3xl">
+      <button class="modal-close-btn" id="certModalCloseBtn" aria-label="Close Certificate Modal">&times;</button>
+      
+      <!-- Certificate Image Container with Zoom/Preview -->
+      <div class="p-4 md:p-6 bg-[#0c0c12] border-b border-white/10 flex justify-center items-center">
+        <div class="relative group rounded-lg overflow-hidden border border-white/15 shadow-2xl bg-white max-h-[58vh] flex items-center justify-center">
+          <img 
+            id="certModalImage" 
+            src="assets/images/python_101_data_science_cert.jpg" 
+            alt="Python 101 for Data Science - Cognitive Class IBM Certificate" 
+            class="max-h-[56vh] w-auto object-contain select-none"
+          >
+          <a 
+            id="certModalDirectLink" 
+            href="assets/certificates/python_101_for_data_science.pdf" 
+            target="_blank" 
+            class="absolute bottom-3 right-3 bg-black/85 hover:bg-[#ef233c] text-white text-xs font-mono font-semibold px-3 py-1.5 rounded-md backdrop-blur transition-all flex items-center gap-1.5 shadow-lg border border-white/10"
+          >
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Open PDF</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate Meta Details -->
+      <div class="modal-content-inner p-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="inline-flex items-center text-[10px] font-bold font-mono text-[#ef233c] bg-[#ef233c]/10 border border-[#ef233c]/30 px-2 py-0.5 rounded tracking-wider uppercase">IBM / COGNITIVE CLASS</span>
+              <span class="text-xs text-neutral-400 font-mono">Course Code: PY0101EN</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-white" id="certModalTitle">Python 101 for Data Science</h3>
+          </div>
+          <div class="text-right">
+            <span class="text-[11px] text-neutral-400 font-mono block">COMPLETION DATE</span>
+            <span class="text-sm font-bold text-[#ef233c] font-mono">September 14, 2026</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4 text-xs">
+          <div class="bg-white/[0.02] border border-white/[0.06] p-3 rounded-lg">
+            <span class="text-neutral-400 font-mono block mb-1">CERTIFIED RECIPIENT</span>
+            <span class="text-white font-bold text-sm tracking-wide">JAOUADUL KARIM HIMEL</span>
+          </div>
+          <div class="bg-white/[0.02] border border-white/[0.06] p-3 rounded-lg">
+            <span class="text-neutral-400 font-mono block mb-1">ISSUING AUTHORITY</span>
+            <span class="text-white font-semibold">IBM Developer Skills Network &amp; Cognitive Class</span>
+          </div>
+        </div>
+
+        <div class="modal-text-block mb-5">
+          <h4 style="font-size:0.75rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-red-bright);margin-bottom:0.4rem;">VERIFIED COMPETENCIES</h4>
+          <p class="text-neutral-300 text-sm leading-relaxed">
+            Python programming fundamentals for data science, data structures (lists, tuples, sets, dictionaries), conditions, loops, functions, exception handling, object-oriented programming (OOP), file I/O operations, and foundational statistical data analysis with <strong>Pandas</strong> dataframes and <strong>NumPy</strong> arrays.
+          </p>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex items-center gap-3 pt-2 flex-wrap">
+          <a 
+            id="certModalVerifyBtn" 
+            href="https://courses.cognitiveclass.ai/certificates/44a0ab78a0124c0094310caacbe11107" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-primary"
+          >
+            <span>VERIFY AUTHENTICITY ON COGNITIVE CLASS</span>
+            <span>↗</span>
+          </a>
+          <a 
+            id="certModalPdfBtn" 
+            href="assets/certificates/python_101_for_data_science.pdf" 
+            target="_blank" 
+            download="Jaouadul_Karim_Himel_Python_101_for_Data_Science.pdf" 
+            class="px-4 py-2.5 rounded-lg border border-white/20 text-neutral-300 hover:text-white hover:border-[#ef233c] text-xs font-mono font-bold tracking-wider transition-all inline-flex items-center gap-2"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>DOWNLOAD CERTIFICATE (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll-to-Top Button (Positioned next to WhatsApp FAB) -->
+  <button 
+    id="floatingBackToTop" 
+    class="floating-back-to-top" 
+    aria-label="Scroll Back to Top of Page" 
+    title="Back to Top"
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Floating Direct WhatsApp Button (Icon Only with Pulse Animation) -->
+  <a 
+    href="https://wa.me/8801621467652?text=Hello%20Jaouadul%20Karim%20Himel,%20I%20would%20like%20to%20discuss%20a%20data%20analytics%20project." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float-btn" 
+    aria-label="Direct Chat with Himel on WhatsApp"
+    title="Chat with Himel on WhatsApp (+880 1621-467652)"
+  >
+    <span class="whatsapp-ping-ring" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+    </svg>
+  </a>
+
+  <!-- Main JavaScript File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
