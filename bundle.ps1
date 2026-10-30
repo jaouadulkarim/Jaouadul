@@ -77,16 +77,16 @@ if ($html.Contains($cssOldLink)) {
     Write-Warning "Could not find CSS link."
 }
 
-# 3. Replace image references in HTML
-$html = $html.Replace('assets/images/himel-dark.jpg', $darkB64)
-Write-Host "Replaced himel-dark.jpg in HTML with Base64."
+# 3. Replace image references in HTML (ONLY on <img> tags, NEVER inside <head> <meta> tags)
+$html = $html.Replace('src="assets/images/himel-dark.jpg"', "src=`"$darkB64`"")
+Write-Host "Replaced himel-dark.jpg img src with Base64."
 
 $certImgPath = Join-Path $workspaceDir "assets\images\python_101_data_science_cert.jpg"
 if (Test-Path $certImgPath) {
     $certBytes = [System.IO.File]::ReadAllBytes($certImgPath)
     $certB64 = "data:image/jpeg;base64," + [System.Convert]::ToBase64String($certBytes)
-    $html = $html.Replace('assets/images/python_101_data_science_cert.jpg', $certB64)
-    Write-Host "Replaced python_101_data_science_cert.jpg in HTML with Base64."
+    $html = $html.Replace('src="assets/images/python_101_data_science_cert.jpg"', "src=`"$certB64`"")
+    Write-Host "Replaced python_101_data_science_cert.jpg img src with Base64."
 }
 
 # 4. Replace main.js link with inlined script
@@ -105,8 +105,10 @@ if ($html.Contains($jsOldLink)) {
     Write-Warning "Could not find main.js script tag."
 }
 
-# Write out the new self-contained index.html and Himel_Portfolio_Standalone.html
-[System.IO.File]::WriteAllText($indexPath, $html, [System.Text.Encoding]::UTF8)
+# Write out the clean index.html (for GitHub Pages and web hosting)
+Copy-Item -Path $devIndexPath -Destination $indexPath -Force
+Write-Host "Generated clean production index.html (Size: $((Get-Item $indexPath).Length) bytes)."
+
+# Write out the self-contained Himel_Portfolio_Standalone.html (portable single-file version)
 [System.IO.File]::WriteAllText($standalonePath, $html, [System.Text.Encoding]::UTF8)
-Write-Host "Generated self-contained index.html and Himel_Portfolio_Standalone.html successfully!"
-Write-Host "File size: $((Get-Item $indexPath).Length) bytes."
+Write-Host "Generated portable Himel_Portfolio_Standalone.html (Size: $((Get-Item $standalonePath).Length) bytes)."
