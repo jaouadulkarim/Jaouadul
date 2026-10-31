@@ -5,11 +5,11 @@ $workspaceDir = "e:\antigravity\Himel"
 $indexPath = Join-Path $workspaceDir "index.html"
 $standalonePath = Join-Path $workspaceDir "Himel_Portfolio_Standalone.html"
 $devIndexPath = Join-Path $workspaceDir "index.dev.html"
-$stylePath = Join-Path $workspaceDir "assets\css\style.css"
-$tailwindPath = Join-Path $workspaceDir "assets\js\tailwind.cdn.js"
-$mainJsPath = Join-Path $workspaceDir "assets\js\main.js"
-$darkImgPath = Join-Path $workspaceDir "assets\images\himel-dark.jpg"
-$origImgPath = Join-Path $workspaceDir "assets\images\himel.jpg"
+$stylePath = Join-Path $workspaceDir "style.css"
+$tailwindPath = Join-Path $workspaceDir "tailwind.cdn.js"
+$mainJsPath = Join-Path $workspaceDir "main.js"
+$darkImgPath = Join-Path $workspaceDir "himel-dark.jpg"
+$origImgPath = Join-Path $workspaceDir "himel.jpg"
 
 Write-Host "Reading image files and encoding to Base64..."
 $darkBytes = [System.IO.File]::ReadAllBytes($darkImgPath)
@@ -26,12 +26,12 @@ $tailwindJs = [System.IO.File]::ReadAllText($tailwindPath, [System.Text.Encoding
 $mainJs = [System.IO.File]::ReadAllText($mainJsPath, [System.Text.Encoding]::UTF8)
 
 # Update main.js image references to base64
-$mainJs = $mainJs.Replace("'assets/images/himel-dark.jpg'", "'$darkB64'")
-$mainJs = $mainJs.Replace("'assets/images/himel.jpg'", "'$origB64'")
+$mainJs = $mainJs.Replace("'himel-dark.jpg'", "'$darkB64'")
+$mainJs = $mainJs.Replace("'himel.jpg'", "'$origB64'")
 $dummySvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3C/svg%3E"
-$mainJs = $mainJs.Replace("'assets/images/project-1-ecommerce.jpg'", "'$dummySvg'")
-$mainJs = $mainJs.Replace("'assets/images/project-2-churn.jpg'", "'$dummySvg'")
-$mainJs = $mainJs.Replace("'assets/images/project-3-finance.jpg'", "'$dummySvg'")
+$mainJs = $mainJs.Replace("'project-1-ecommerce.jpg'", "'$dummySvg'")
+$mainJs = $mainJs.Replace("'project-2-churn.jpg'", "'$dummySvg'")
+$mainJs = $mainJs.Replace("'project-3-finance.jpg'", "'$dummySvg'")
 
 Write-Host "Reading index.dev.html..."
 $html = [System.IO.File]::ReadAllText($devIndexPath, [System.Text.Encoding]::UTF8)
@@ -42,7 +42,7 @@ $tailwindOldBlock = @"
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     if (typeof tailwind === 'undefined') {
-      document.write('<script src="assets/js/tailwind.cdn.js"><\/script>');
+      document.write('<script src="tailwind.cdn.js"><\/script>');
     }
   </script>
 "@
@@ -62,7 +62,7 @@ if ($html.Contains($tailwindOldBlock)) {
 }
 
 # 2. Replace CSS link with inlined style
-$cssOldLink = '<link rel="stylesheet" href="assets/css/style.css">'
+$cssOldLink = '<link rel="stylesheet" href="style.css">'
 $cssInlinedBlock = @"
   <!-- Inlined Core Design System & Theme Stylesheet -->
   <style>
@@ -78,19 +78,19 @@ if ($html.Contains($cssOldLink)) {
 }
 
 # 3. Replace image references in HTML (ONLY on <img> tags, NEVER inside <head> <meta> tags)
-$html = $html.Replace('src="assets/images/himel-dark.jpg"', "src=`"$darkB64`"")
+$html = $html.Replace('src="himel-dark.jpg"', "src=`"$darkB64`"")
 Write-Host "Replaced himel-dark.jpg img src with Base64."
 
-$certImgPath = Join-Path $workspaceDir "assets\images\python_101_data_science_cert.jpg"
+$certImgPath = Join-Path $workspaceDir "python_101_data_science_cert.jpg"
 if (Test-Path $certImgPath) {
     $certBytes = [System.IO.File]::ReadAllBytes($certImgPath)
     $certB64 = "data:image/jpeg;base64," + [System.Convert]::ToBase64String($certBytes)
-    $html = $html.Replace('src="assets/images/python_101_data_science_cert.jpg"', "src=`"$certB64`"")
+    $html = $html.Replace('src="python_101_data_science_cert.jpg"', "src=`"$certB64`"")
     Write-Host "Replaced python_101_data_science_cert.jpg img src with Base64."
 }
 
 # 4. Replace main.js link with inlined script
-$jsOldLink = '<script src="assets/js/main.js"></script>'
+$jsOldLink = '<script src="main.js"></script>'
 $jsInlinedBlock = @"
   <!-- Inlined Interactive Application Logic & Portfolio Controller -->
   <script>
